@@ -16,9 +16,14 @@ Instruções:
 
 # Função para calcular a média
 def calcular_media(lista):
-    # TODO: implementar a soma dos elementos e dividir pelo tamanho da lista
-    pass
-
+    #implementar a soma dos elementos e dividir pelo tamanho da lista
+    if not lista:  # verifica se a lista está vazia
+        return 0    
+    soma = 0
+    for numero in lista:
+        soma += numero
+    media = soma / len(lista)
+    return media
 
 # Função para calcular a mediana
 def calcular_mediana(lista):
